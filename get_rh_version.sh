@@ -25,5 +25,5 @@ elif [[ $MAJOR_VERSION -ge 7 && $MAJOR_VERSION -lt 8 ]]
 then
   echo "Do version 7 things."
 else
-  echo "Unhandled version $VERSION."
+  echo "Unhandled version $MAJOR_VERSION."
 fi
