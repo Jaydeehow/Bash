@@ -18,10 +18,10 @@ then
   MAJOR_VERSION=`awk 'BEGIN { FS = "." }; {print $1}' /etc/redhat-release | awk '{print $NF}'`
 fi
 
-if [[ $MAJOR_VERSION -ge 6 && $MAJOR_VERSION -lt 7 ]]
+if [[ $MAJOR_VERSION -eq 6 ]]
 then
   echo "Do version 6 things."
-elif [[ $MAJOR_VERSION -ge 7 && $MAJOR_VERSION -lt 8 ]]
+elif [[ $MAJOR_VERSION -eq 7 ]]
 then
   echo "Do version 7 things."
 else
